@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Health Survey</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Health & Lifestyle Survey</h1>
+        <p id="description">Let's measure how healthy you are right now!</p>
+    </header>
+    <main>
+        <form id="survey-form">
+
+            <h2>Contact Information</h2>
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="e.g: John Smith" required>
+            </div>
+            <div>
+                <label for="age" id="age-label">Age:</label>
+                <input type="number" id="age" name="age" min="10" max="100" placeholder="Age in numbers">
+            </div>
+            <div>
+                <label for="email" id="email-label">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="johnsmith@domain.com">
+            </div>
+            <div>
+                <label for="number" id="number-label">Phone Number:</label>
+                <input type="tel" name="tel" id="number" placeholder="+xx xxx xxx-xxxx" >
+            </div>
+
+            <h2>Physical Information</h2>
+            <div>
+                <label for="age" id="age-label">Age</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                Gender:
+                <label for="male">
+                    Male<input type="radio" name="gender" id="male">
+                </label>
+                <label for="female">
+                    Female<input type="radio" name="gender" id="female">
+                </label>
+            </div>
+            <div>
+                <label for="height" id="height-label">Height:</label>
+                <input type="number" name="height" id="height">
+            </div>
+            <div>
+                <label for="weight" id="weight-label">Weight:</label>
+                <input type="number" name="weight" id="weight">
+            </div>
+            <div id="dropdown-menu">
+                <label for="dropdown">Fitness Level</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="default">--</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div id="sitting-time-radio">
+                <p>How much time do you spend sitting in a daily basis?</p>
+                <label for="1-2">1-2 hours a day</label>
+                <input type="radio" name="daily-sitting-time" id="1-2">
+    
+                <label for="3-4">3-4 hours a day</label>
+                <input type="radio" name="daily-sitting-time" id="3-4">
+    
+                <label for="5-6">5-6 hours a day</label>
+                <input type="radio" name="daily-sitting-time" id="5-6">
+    
+                <label for="7-8">7-8 hours a day</label>
+                <input type="radio" name="daily-sitting-time" id="7-8">
+    
+                <label for="8+">+8 hours a day</label>
+                <input type="radio" name="daily-sitting-time" id="8+">
+            </div>
+
+            <div id="workout-rate-radio">
+            <div>
+                <p>How often do you excercise?</p>
+                    <label for="never">NEVER</label>
+                    <input type="radio" name="weekly-workout-time" id="never">
+    
+                    <label for="once">Once a week</label>
+                    <input type="radio" name="weekly-workout-time" id="once">
+    
+                    <label for="2-3">2-3 days per week</label>
+                    <input type="radio" name="weekly-workout-time" id="2-3">
+    
+                    <label for="4-5">4-5 days per week</label>
+                    <input type="radio" name="weekly-workout-time" id="4-5">
+    
+                    <label for="everyday">EVERYDAY</label>
+                    <input type="radio" name="weekly-workout-time" id="everyday">
+            </div>
+            </div>
+
+            <div id="workout-type-checkbox">
+                <fieldset>
+                    <legend>What kind of workout you perform? (Check all that apply)</legend>
+                    <div>
+                        <label for="running">Running</label>
+                        <input type="checkbox" name="workout-type" id="running" value="running">
+                    </div>
+                    <div>
+                        <label for="swimming">Swimming</label>
+                        <input type="checkbox" name="workout-type" id="swimming" value="swimming">
+                    </div>
+                    <div>
+                        <label for="biking">Biking</label>
+                        <input type="checkbox" name="workout-type" id="biking" value="biking">
+                    </div>
+                    <div>
+                        <label for="weight-lifting">Weight-lifting</label>
+                        <input type="checkbox" name="workout-type" id="weight-lifting" value="weight-lifting">
+                    </div>
+                    <div>
+                        <label for="calisthenics">Calisthenics</label>
+                        <input type="checkbox" name="workout-type" id="calisthenics" value="calisthenics">
+                    </div>
+                    <div>
+                        <label for="other">Other (Please specify)</label>
+                        <input type="checkbox" name="workout-type" id="other" value="other">
+                        <input type="text" name="workout-type" id="other">
+                    </div>
+                </fieldset>
+        
+            </div>
+
+            <div id="additional-comments">
+                <label for="additional-comments">Tell us more about your physical activity and what are your current goals for your physical development.</label>
+                <br>
+                <textarea name="additional-comments" id="additional-comments" cols="60" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>  
+    </main>
+</body>
+</html>
