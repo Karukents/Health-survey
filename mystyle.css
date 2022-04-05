@@ -12,6 +12,10 @@ body {
     height: auto;
     width: 100%;
     padding-top: 30px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 #survey-form {
