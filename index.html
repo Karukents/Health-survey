@@ -21,10 +21,6 @@
                 <input type="text" name="name" id="name" placeholder="e.g: John Smith" required>
             </div>
             <div>
-                <label for="age" id="age-label">Age:</label>
-                <input type="number" id="age" name="age" min="10" max="100" placeholder="Age in numbers">
-            </div>
-            <div>
                 <label for="email" id="email-label">E-mail:</label>
                 <input type="email" name="email" id="email" placeholder="johnsmith@domain.com">
             </div>
@@ -49,11 +45,11 @@
             </div>
             <div>
                 <label for="height" id="height-label">Height:</label>
-                <input type="number" name="height" id="height">
+                <input type="number" name="height" id="height" placeholder="Height in cm">
             </div>
             <div>
                 <label for="weight" id="weight-label">Weight:</label>
-                <input type="number" name="weight" id="weight">
+                <input type="number" name="weight" id="weight" placeholder="Weight in g">
             </div>
             <div id="dropdown-menu">
                 <label for="dropdown">Fitness Level</label>
@@ -66,28 +62,30 @@
             </div>
 
             <div id="sitting-time-radio">
-                <p>How much time do you spend sitting in a daily basis?</p>
-                <label for="1-2">1-2 hours a day</label>
-                <input type="radio" name="daily-sitting-time" id="1-2">
+                <h2>How much time do you spend sitting in a daily basis?</h2>
+                <div class="sitting-time">
+                    <label for="1-2">1-2 hours a day</label>
+                    <input type="radio" name="daily-sitting-time" id="1-2" checked>
     
-                <label for="3-4">3-4 hours a day</label>
-                <input type="radio" name="daily-sitting-time" id="3-4">
+                    <label for="3-4">3-4 hours a day</label>
+                    <input type="radio" name="daily-sitting-time" id="3-4">
     
-                <label for="5-6">5-6 hours a day</label>
-                <input type="radio" name="daily-sitting-time" id="5-6">
+                    <label for="5-6">5-6 hours a day</label>
+                    <input type="radio" name="daily-sitting-time" id="5-6">
     
-                <label for="7-8">7-8 hours a day</label>
-                <input type="radio" name="daily-sitting-time" id="7-8">
+                    <label for="7-8">7-8 hours a day</label>
+                    <input type="radio" name="daily-sitting-time" id="7-8">
     
-                <label for="8+">+8 hours a day</label>
-                <input type="radio" name="daily-sitting-time" id="8+">
+                    <label for="8+">+8 hours a day</label>
+                    <input type="radio" name="daily-sitting-time" id="8+">
+                </div> 
             </div>
 
             <div id="workout-rate-radio">
-            <div>
-                <p>How often do you excercise?</p>
+                <h2>How often do you excercise?</h2>
+                <div class="workout-rate">
                     <label for="never">NEVER</label>
-                    <input type="radio" name="weekly-workout-time" id="never">
+                    <input type="radio" name="weekly-workout-time" id="never" checked>
     
                     <label for="once">Once a week</label>
                     <input type="radio" name="weekly-workout-time" id="once">
@@ -100,12 +98,12 @@
     
                     <label for="everyday">EVERYDAY</label>
                     <input type="radio" name="weekly-workout-time" id="everyday">
-            </div>
+                </div>
             </div>
 
             <div id="workout-type-checkbox">
                 <fieldset>
-                    <legend>What kind of workout you perform? (Check all that apply)</legend>
+                    <h2>What kind of workout you perform? (Check all that apply)</h2>
                     <div>
                         <label for="running">Running</label>
                         <input type="checkbox" name="workout-type" id="running" value="running">
