@@ -12,49 +12,49 @@
         <h1 id="title">Health & Lifestyle Survey</h1>
         <p id="description">Let's measure how healthy you are right now!</p>
     </header>
-    <main>
+    <main class="container">
         <form id="survey-form">
 
             <h2>Contact Information</h2>
-            <div>
+            <div class="form-group">
                 <label for="name" id="name-label">Name</label>
-                <input type="text" name="name" id="name" placeholder="e.g: John Smith" required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email" id="email-label">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="johnsmith@domain.com">
+                <input type="email" name="email" id="email" class="form-control" placeholder="johnsmith@domain.com">
             </div>
-            <div>
-                <label for="number" id="number-label">Phone Number:</label>
-                <input type="tel" name="tel" id="number" placeholder="+xx xxx xxx-xxxx" >
+            <div class="form-group">
+                <label for="number" id="number-label">Phone Number: <span class="clue">(optional)</span></label>
+                <input type="tel" name="tel" id="number" class="form-control" placeholder="Enter your phone number" >
             </div>
 
             <h2>Physical Information</h2>
-            <div>
-                <label for="age" id="age-label">Age</label>
-                <input type="number" name="age" id="age">
-            </div>
-            <div>
+            <div class="form-group">
+                <label for="age" id="age-label">Age:</label>
+                <input type="number" name="age" id="age" class="form-control">
+            </div >
+            <div id="gender" class="form-group">
                 Gender:
                 <label for="male">
-                    Male<input type="radio" name="gender" id="male">
+                    Male<input type="radio" name="gender" id="male" checked>
                 </label>
                 <label for="female">
                     Female<input type="radio" name="gender" id="female">
                 </label>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="height" id="height-label">Height:</label>
-                <input type="number" name="height" id="height" placeholder="Height in cm">
+                <input type="number" name="height" id="height" class="form-control" placeholder="Height in cm">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="weight" id="weight-label">Weight:</label>
-                <input type="number" name="weight" id="weight" placeholder="Weight in g">
+                <input type="number" name="weight" id="weight" class="form-control" placeholder="Weight in kg">
             </div>
-            <div id="dropdown-menu">
+            <div id="dropdown-menu" class="form-group">
                 <label for="dropdown">Fitness Level</label>
                 <select name="dropdown" id="dropdown">
-                    <option value="default">--</option>
+                    <option value="default">Select an option</option>
                     <option value="beginner">Beginner</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="advanced">Advanced</option>
@@ -64,81 +64,92 @@
             <div id="sitting-time-radio">
                 <h2>How much time do you spend sitting in a daily basis?</h2>
                 <div class="sitting-time">
-                    <label for="1-2">1-2 hours a day</label>
-                    <input type="radio" name="daily-sitting-time" id="1-2" checked>
-    
-                    <label for="3-4">3-4 hours a day</label>
-                    <input type="radio" name="daily-sitting-time" id="3-4">
-    
-                    <label for="5-6">5-6 hours a day</label>
-                    <input type="radio" name="daily-sitting-time" id="5-6">
-    
-                    <label for="7-8">7-8 hours a day</label>
-                    <input type="radio" name="daily-sitting-time" id="7-8">
-    
-                    <label for="8+">+8 hours a day</label>
-                    <input type="radio" name="daily-sitting-time" id="8+">
+                    <label for="1-2">
+                    <input type="radio" name="daily-sitting-time" id="1-2" class="input-radio" checked>
+                   1-2 hours a day</label>
+
+                    <label for="3-4">
+                    <input type="radio" name="daily-sitting-time" id="3-4" class="input-radio">
+                    3-4 hours a day</label>
+
+                    <label for="5-6">
+                    <input type="radio" name="daily-sitting-time" id="5-6" class="input-radio">
+                    5-6 hours a day</label>
+                    <label for="7-8">
+                    <input type="radio" name="daily-sitting-time" id="7-8" class="input-radio">
+                    7-8 hours a day</label>
+                    <label for="8+">
+                    <input type="radio" name="daily-sitting-time" id="8+" class="input-radio">
+                    +8 hours a day</label>
                 </div> 
             </div>
 
             <div id="workout-rate-radio">
                 <h2>How often do you excercise?</h2>
                 <div class="workout-rate">
-                    <label for="never">NEVER</label>
-                    <input type="radio" name="weekly-workout-time" id="never" checked>
-    
-                    <label for="once">Once a week</label>
-                    <input type="radio" name="weekly-workout-time" id="once">
-    
-                    <label for="2-3">2-3 days per week</label>
-                    <input type="radio" name="weekly-workout-time" id="2-3">
-    
-                    <label for="4-5">4-5 days per week</label>
-                    <input type="radio" name="weekly-workout-time" id="4-5">
-    
-                    <label for="everyday">EVERYDAY</label>
-                    <input type="radio" name="weekly-workout-time" id="everyday">
+                    <label for="never">
+                    <input type="radio" name="weekly-workout-time" id="never" class="input-radio" checked>
+                    NEVER</label>
+
+                    <label for="once">
+                    <input type="radio" name="weekly-workout-time" id="once" class="input-radio">
+                    Once a week</label>
+
+                    <label for="2-3">
+                    <input type="radio" name="weekly-workout-time" id="2-3" class="input-radio">
+                    2-3 days per week</label>
+
+                    <label for="4-5">
+                    <input type="radio" name="weekly-workout-time" id="4-5" class="input-radio">
+                    4-5 days per week</label>
+
+                    <label for="everyday">
+                    <input type="radio" name="weekly-workout-time" id="everyday" class="input-radio">
+                    EVERYDAY</label>
                 </div>
             </div>
 
             <div id="workout-type-checkbox">
-                <fieldset>
-                    <h2>What kind of workout you perform? (Check all that apply)</h2>
+                    <h2>What kind of workout you perform?<span class="clue">(Check all that apply)</span></h2>
                     <div>
-                        <label for="running">Running</label>
-                        <input type="checkbox" name="workout-type" id="running" value="running">
+                        <label for="running">
+                        <input type="checkbox" name="workout-type" id="running" class="input-checkbox" value="running">
+                        Running</label>
                     </div>
                     <div>
-                        <label for="swimming">Swimming</label>
-                        <input type="checkbox" name="workout-type" id="swimming" value="swimming">
+                        <label for="swimming">
+                        <input type="checkbox" name="workout-type" id="swimming" class="input-checkbox" value="swimming">
+                        Swimming</label>
                     </div>
                     <div>
-                        <label for="biking">Biking</label>
-                        <input type="checkbox" name="workout-type" id="biking" value="biking">
+                        <label for="biking">
+                        <input type="checkbox" name="workout-type" id="biking" class="input-checkbox" value="biking">
+                        Biking</label>
                     </div>
                     <div>
-                        <label for="weight-lifting">Weight-lifting</label>
-                        <input type="checkbox" name="workout-type" id="weight-lifting" value="weight-lifting">
+                        <label for="weight-lifting">
+                        <input type="checkbox" name="workout-type" id="weight-lifting" class="input-checkbox" value="weight-lifting">
+                        Weight-lifting</label>
                     </div>
                     <div>
-                        <label for="calisthenics">Calisthenics</label>
-                        <input type="checkbox" name="workout-type" id="calisthenics" value="calisthenics">
+                        <label for="calisthenics">
+                        <input type="checkbox" name="workout-type" id="calisthenics" class="input-checkbox" value="calisthenics">
+                        Calisthenics</label>
                     </div>
                     <div>
-                        <label for="other">Other (Please specify)</label>
-                        <input type="checkbox" name="workout-type" id="other" value="other">
+                        <label for="other">
+                        <input type="checkbox" name="workout-type" id="other" class="input-checkbox" value="other">
                         <input type="text" name="workout-type" id="other">
+                        Other (Please specify)</label>
                     </div>
-                </fieldset>
-        
             </div>
 
-            <div id="additional-comments">
+            <div id="additional-comments-container">
                 <label for="additional-comments">Tell us more about your physical activity and what are your current goals for your physical development.</label>
                 <br>
                 <textarea name="additional-comments" id="additional-comments" cols="60" rows="10"></textarea>
             </div>
-            <div>
+            <div id="submit-button">
                 <button type="submit" id="submit">Submit</button>
             </div>
         </form>  
