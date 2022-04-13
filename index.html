@@ -24,17 +24,17 @@
             </div>
             <div class="form-group">
                 <label for="email" id="email-label">E-mail:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="johnsmith@domain.com">
+                <input type="email" name="email" id="email" class="form-control" placeholder="johnsmith@domain.com" required>
             </div>
             <div class="form-group">
                 <label for="number" id="number-label">Phone Number: <span class="clue">(optional)</span></label>
-                <input type="tel" name="tel" id="number" class="form-control" placeholder="Enter your phone number">
+                <input type="tel" name="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
             </div>
 
             <h2>Physical Information</h2>
             <div class="form-group">
                 <label for="age" id="age-label">Age:</label>
-                <input type="number" name="age" id="age" class="form-control" placeholder="Type in your age">
+                <input type="number" name="age" id="number" class="form-control" placeholder="Type in your age" required min="10" max="100">
             </div>
             <div id="gender-dropdown-menu" class="form-group">
                 <label for="dropdown">Gender:</label>
@@ -68,21 +68,23 @@
                 <h2>How much time do you spend sitting in a daily basis?</h2>
                 <div class="sitting-time">
                     <label for="1-2">
-                        <input type="radio" name="daily-sitting-time" id="1-2" class="input-radio" checked>
+                        <input type="radio" name="daily-sitting-time" id="1-2" class="input-radio" value="1-2" checked>
 
                     1-2 hours a day</label>
                     <label for="3-4">
-                        <input type="radio" name="daily-sitting-time" id="3-4" class="input-radio">
+                        <input type="radio" name="daily-sitting-time" id="3-4" class="input-radio" value="3-4">
                     3-4 hours a day</label>
 
                     <label for="5-6">
-                    <input type="radio" name="daily-sitting-time" id="5-6" class="input-radio">
+                        <input type="radio" name="daily-sitting-time" id="5-6" class="input-radio" value="5-6">
                     5-6 hours a day</label>
+
                     <label for="7-8">
-                    <input type="radio" name="daily-sitting-time" id="7-8" class="input-radio">
+                        <input type="radio" name="daily-sitting-time" id="7-8" class="input-radio" value="7-8">
                     7-8 hours a day</label>
+
                     <label for="8+">
-                    <input type="radio" name="daily-sitting-time" id="8+" class="input-radio">
+                        <input type="radio" name="daily-sitting-time" id="8+" class="input-radio" value="8+">
                     +8 hours a day</label>
                 </div>
             </div>
@@ -91,23 +93,23 @@
                 <h2>How often do you excercise?</h2>
                 <div class="workout-rate">
                     <label for="never">
-                    <input type="radio" name="weekly-workout-time" id="never" class="input-radio" checked>
+                    <input type="radio" name="weekly-workout-time" id="never" class="input-radio" checked value="never">
                     NEVER</label>
 
                     <label for="once">
-                    <input type="radio" name="weekly-workout-time" id="once" class="input-radio">
+                    <input type="radio" name="weekly-workout-time" id="once" class="input-radio" value="once">
                     Once a week</label>
 
                     <label for="2-3">
-                    <input type="radio" name="weekly-workout-time" id="2-3" class="input-radio">
+                    <input type="radio" name="weekly-workout-time" id="2-3" class="input-radio" value="2-3">
                     2-3 days per week</label>
 
                     <label for="4-5">
-                    <input type="radio" name="weekly-workout-time" id="4-5" class="input-radio">
+                    <input type="radio" name="weekly-workout-time" id="4-5" class="input-radio" value="4-5">
                     4-5 days per week</label>
 
                     <label for="everyday">
-                    <input type="radio" name="weekly-workout-time" id="everyday" class="input-radio">
+                    <input type="radio" name="weekly-workout-time" id="everyday" class="input-radio" value="everyday">
                     EVERYDAY</label>
                 </div>
             </div>
