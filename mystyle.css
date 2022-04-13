@@ -1,33 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'League Gothic', sans-serif;
+    font-family: 'Special Elite', cursive;
 }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    box-sizing: border-box;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+h1 {
+    padding-top: 5rem;
+}
+
 body {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
+    min-width: 100%;
 }
+
+
 /* mobile friendly alternative to using background-attachment: fixed */
+
 body::before {
     content: '';
     position: fixed;
@@ -36,33 +52,29 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--color-darkblue);
-    background-image: linear-gradient(
-        115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
-      ),
-      url(https://i.imgur.com/hrItJgm.jpg);
+    background-image: url(https://i.ibb.co/HpdDP8f/Background2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
+
 .container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
-  }
-  
-  @media (min-width: 576px) {
+}
+
+@media (min-width: 576px) {
     .container {
-      max-width: 540px;
+        max-width: 540px;
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .container {
-      max-width: 720px;
+        max-width: 720px;
     }
-  }
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -71,30 +83,33 @@ header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
 }
-  
+
 #title {
     font-size: 48px;
 }
+
 #description {
     font-size: 1.525rem;
     margin-bottom: .60rem;
     font-weight: 200;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     font-size: 1.525rem;
-
 }
+
 form {
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
 }
+
 @media (min-width: 480px) {
     form {
-      padding: 2.5rem;
+        padding: 2.5rem;
     }
-  }
-form h2{
-    font-size: 1.525rem;
-    margin: .55rem 0;
+}
+
+form h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
 }
 
 .sitting-time {
@@ -102,11 +117,13 @@ form h2{
     flex-direction: column;
     align-items: flex-start;
 }
+
 #workout-rate {
     display: flex;
     justify-content: space-between;
     margin: 0 .35rem;
 }
+
 .form-control {
     display: block;
     width: 100%;
@@ -117,79 +134,85 @@ form h2{
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  .form-control:focus {
+    transition: border-color 0.15s ease-in-out;
+    box-shadow: 0.15s ease-in-out;
+}
+
+.form-control:focus {
     border-color: #95ff80;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(9, 255, 0, 0.25);
-  }
-  label {
-    display: flex;
-    align-items: center;
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  input,
-  button,
-  select,
-  textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-.input-textarea {
-    min-height: 120px;
-    width: 100%;
-    padding: 0.625rem;
-    resize: vertical;
-  }
-  .input-radio,
-.input-checkbox {
-  display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
-}
-#dropdown {
-    font-size: 1.150rem;
 }
 
-#gender {
-    font-size: 1.150rem;
-    
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.425rem;
+    margin-bottom: 0.5rem;
 }
+
+input,
+button,
+select,
 textarea {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-  }
-
-
-h2 {
-    font-size: 18px;
 }
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+#dropdown {
+    font-size: 1.250rem;
+}
+
+#gender {
+    font-size: 1.250rem;
+}
+
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 p {
-    font-size: 14px;
+    font-size: 1.250rem;
 }
+
 div {
     padding-bottom: 10px;
 }
+
 #survey-form {
     background-color: #29AA31;
     padding: 30px 2rem;
     border-radius: 2%;
     margin-bottom: 2rem;
 }
+
 #additional-comments-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #additional-comments {
     height: 5rem;
     width: 100%;
@@ -197,14 +220,14 @@ div {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    
 }
+
 #submit-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
 #submit {
     height: 50px;
     width: 7rem;
@@ -212,5 +235,4 @@ div {
     font-weight: 300;
     border-radius: 0.225rem;
     border: none;
-    
 }
